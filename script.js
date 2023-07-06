@@ -4,10 +4,11 @@ let res = document.querySelector('div#res')
 let valores = []
 
 function isNumero(n){
-    if(Number(n)>=1 && Number(n)<=100 )
+    if(Number(n)>=1 && Number(n)<=100 ) {
         return true
-    else
+    } else {
         return false
+    }
 }
 
 function inLista(n, l){
