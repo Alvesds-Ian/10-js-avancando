@@ -23,10 +23,10 @@ function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)){
         valores.push(Number(num.value))
         let item = document.createElement('option')
-        item.text = `Valor ${num.value} adicionado`
+        item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
         res.innerHTML = ''
-    }else{
+    }else {
         window.alert('Valor inválido ou já encontrado na lista!')
     }
     num.value = ''
@@ -48,6 +48,7 @@ function finalizar() {
         let soma = 0
         let media = 0
         for(let pos in valores){
+            soma += valores[pos]
             if(valores[pos] > maior)
                 maior = valores[pos]
             if(valores[pos] < menor)
