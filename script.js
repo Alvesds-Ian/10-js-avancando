@@ -12,7 +12,7 @@ function isNumero(n) {
 }
 
 function inLista(n, l) {
-    if(l.indexOf(Number(n) != -1)) {
+    if(l.indexOf(Number(n)) != -1) {
         return true
     }else {
         return false 
@@ -34,10 +34,6 @@ function adicionar() {
 }
 
 function finalizar() {
-    let maior = Math.max.apply(null, vetor)
-    let menor = Math.min.apply(null, vetor)
-    let soma = 0
-    
     if (valores.length == 0) {
         window.alert('Adicione ao menos um valor antes de iniciar!')
         num.focus()
